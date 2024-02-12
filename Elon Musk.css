@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #c0c0c0 0%, #ffffff 100%);
+    color: #ffffff;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+}
+
+#header, #footer {
+    background-color: #00adccf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#header {
+    border-bottom-left-radius: 70% 30%;
+    border-bottom-right-radius: 70% 30%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: -20px; 
+}
+
+#nav {
+    background-color: #add8e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-bottom-left-radius: 70% 30%;
+    border-bottom-right-radius: 70% 30%;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px; 
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#nav li a {
+    font-weight: bold;
+    color: black; 
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#nav li a:hover {
+    border-bottom: 2px solid black;
+    transform: scale(1.2);
+}
+
+.content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: 0.5s;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.content-item:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.content-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-item p {
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.content-image {
+    width: 30%; 
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.content-image.large {
+    width: 55%;
+}
+
+.content-image:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#footer {
+    background-color: add8e6;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 40% 80%;
+    border-top-right-radius: 40% 80%;
+}
